@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        
+        body {background: #000;}
+        .wrapper {width: 100%; max-width: 840px; margin: 0 auto;}
+        
+        .resume {background: #fff; padding: 20px;}
+        h1 {font: 700 40px/48px Futura, Arial, sans-serif; padding-bottom: 10px; color: #222;}
+        h2 {font: 16px/24px Futura, Arial, sans-serif; padding-bottom: 30px; color: #222;}
+        h2 span {color: #9F9F9F;}
+        .resume p {margin-bottom: 10px; font: 15px/21px Futura, Arial, sans-serif;color: #222;}
+        .portfolio {background: #807D7D; padding: 30px 20px;}
+        .resume a {color: #222; text-decoration: underline;}
+        .content { display: flex; flex-wrap: wrap;}
+        .content .column {width: 50%; padding: 10px;}
+        .content .img_preview {border-radius: 15px; display: block; width: 100%; position: relative; top:0; transition: all .3s;}
+        .content .img_preview:hover {top: -5px; }
+        .title {color: #fff; font: 700 16px/24px  Arial, sans-serif; padding: 0 10px 10px;}
+
+        .jobs {background: #fff; padding: 20px; display: flex; flex-wrap: wrap;}
+        .jobs .column {width: 70%; padding: 10px; font: 15px/21px  Arial, sans-serif;}
+        .jobs .column.place {width: 30%;}
+        .jobs .column.place p {font: 700 15px/21px  Arial, sans-serif;}
+        .jobs .column.place p span {font-size: 70%;}
+        .jobs .column.place div {font:  12px/16px  Arial, sans-serif; color: #777;}
+        .jobs ul {padding: 15px;}
+        .jobs ul li {margin-bottom:10px;}
+        .jobs .position {font: 700 17px/21px  Arial, sans-serif;}
+
+        @media only screen and (max-device-width: 800px),
+            only screen and (max-width: 800px) {
+                .content .column {width: 100%;}
+                .jobs .column, .jobs .column.place {width: 100%;}
+            }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="resume">
+            <h1>Sergei Baranov</h1>
+            <h2>Senior E-Mail developer <span>|</span> 37 y.o. <span>|</span> B1 English</h2>
+            <p>7 years experience in e-mail development. I have extensive experience in developing templates for e-mail newsletters. Only manual code, with maximum compatibility for all mobile applications, web versions of mail clients, as well as desktop applications including Outlook and Office 360 versions. Implementation of adaptability both through media queries and through floating blocks. Experience in creating AMP emails.</p>
+
+            <p><a href="mailtp:sergeygrady@gmail.com" title="Mail me">Mail me</a></p>
+        </div>
+        <div class="portfolio">
+            <div class="title">Portfolio</div>
+            <div class="content">
+                <div class="column">
+                    <a href="https://testi.at/proj/gyjlcbj03yxs5pyua" target="_blank"><img class="img_preview" src="img/aa.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href=https://testi.at/proj/ayeoc3ni5ixg9h3j" target="_blank"><img class="img_preview" src="img/ah.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="https://testi.at/proj/4z4esgevs5j8hljlcz" target="_blank"><img class="img_preview" src="img/bt2.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="https://testi.at/proj/6vdyfbdhj2x1jxb19" target="_blank"><img class="img_preview" src="img/cp.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="https://testi.at/proj/37e5hbj14y30ldnt3" target="_blank"><img class="img_preview" src="img/cr.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="https://testi.at/proj/9zjo064126aszb3s62" target="_blank"><img class="img_preview" src="img/fm.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="https://testi.at/proj/rlpyi9rfb75h6rjsz3" target="_blank"><img class="img_preview" src="img/la.png" width="400" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="https://testi.at/proj/l2x4slj176ri5e5fd" target="_blank"><img class="img_preview" src="img/ya.png" width="400" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="jobs">
+            <div class="column place">
+                <p>Crm-group <span>(ex. Emailsoldiers)</span></p>
+                <div class="dates">2020 &mdash; present</div>
+            </div>
+            <div class="column">
+                <p class="position">Position: senior E-mail depeloper</p>
+
+                <ul>
+                    <li>Manage and create HTML templates for use by the Customer Marketing team</li>
+                    <li>Learn email creation methodologies and provide recommendations to improve process and quality of emails</li>
+                    <li>Development of templates for mailing lists, correction/updating of existing mailing lists.</li>
+                    <li>Code emails using HTML and map data using AMSCRIPT including proofing and testing creative/content for accuracy to meet and exceed email standards</li>
+                </ul>
+            </div>
+            <div class="column place">
+                <p>Citi Bank Russia</p>
+                <div class="dates">2015 &mdash; 2017</div>
+            </div>
+            <div class="column">
+                <p class="position">Position: front-end developer</p>
+                <ul>
+                    <li>Support and updating of the Citibank Russia website.</li>
+                    <li>Advising marketing and design departments on the preparation of creatives for user mailings</li>
+                    <li>Development of templates for email newsletters</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
